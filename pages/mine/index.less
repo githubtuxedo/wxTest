@@ -1,0 +1,113 @@
+//out: index.wxss
+#minePage{
+    // background-color: #eee;
+    padding: 20rpx 30rpx;
+    .personalInfo{
+        .content{
+            overflow: hidden;
+            min-height: 200rpx;
+            background: rgba(216, 156, 156, 0.1);
+            display: flex;
+            justify-content: space-between;
+            .head-left{
+                align-self: center;
+                display: flex;
+                align-content: center;
+                .head-icon{
+                    width: 100rpx;
+                    height: 100rpx;
+                }
+                .icon-right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .username{
+                        font-size: 32rpx;
+                    }
+                    .mobile{
+                        font-size: 28rpx;
+                        color: #ddd;
+                    }
+                }
+            }
+            .head-right{
+                >view{
+                    height: 50%;
+                }
+                .setting{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 28rpx;
+                }
+                .plus-card{
+                    width: 200rpx;
+                    border-radius: 8rpx;
+                    background-color: pink;
+                    font-size: 22rpx;
+                    transform: rotate(10deg) translate3d(-6rpx, 16rpx, 2rpx);
+                }
+            }
+        }
+    }
+
+    .my-order{
+        margin-top: 30rpx;
+        .head-desc{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            >view{
+                font-size: 32rpx;
+                &.check-all{
+                    font-size: 26rpx;
+                }
+            }
+        }
+        .items{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20rpx 0;
+            >view{
+                flex-grow: 1;
+                max-height: 180rpx;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                text{
+                    font-size: 26rpx;
+                }
+            }
+            image{
+                width:70rpx;
+                height: 70rpx;
+            }
+        }
+    }
+
+    .advise-part{
+        .line-head{
+            position: relative;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28rpx;
+            color: gray;
+            >view{
+                width: 200rpx;
+                height: 4rpx;
+                margin: 0 16rpx;
+            }
+            .left-line{
+                background: radial-gradient(gray 24%, white 100%);
+            }
+            .right-line{
+                background: radial-gradient(gray 24%, white 100%);
+            }
+        }
+    }
+}

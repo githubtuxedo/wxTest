@@ -1,0 +1,98 @@
+//out: index.wxss
+page{
+    height: 100%;
+}
+// ::-webkit-scrollbar {
+//     width: 6px;
+//     background-color: #f5f5f5;
+// }
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+#searchPage{
+    height: 100%;
+    overflow: hidden;
+    .top-search{
+        border-bottom: 2rpx solid gray;
+        padding: 18rpx 0;
+        input{
+            border-radius: 30rpx;
+            background-color: #eee;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 28rpx;
+            font-size: 28rpx;
+            line-height: 28rpx;
+        }
+    }
+    .main{
+        @leftSize: 32rpx;
+        width: 100%;
+        height: 100%;
+        .main-left{
+            float: left;
+            width: 24%;
+            height: 100%;
+            font-size: @leftSize;
+            line-height: 2.5*@leftSize;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            .left-item{
+                &.active{
+                    background-color: #fff;
+                }
+                background-color: #eee;
+            }
+        }
+        .main-right{
+            float: left;
+            width: 76%;
+            height: 100%;
+        }
+    }
+
+
+
+    .letter-nav{
+        position: fixed;
+        top:50%;
+        right: 30rpx;
+        transform: translate3d(0,-50%,1rpx);
+        .letter-item{
+            height: 50rpx;
+            &.active{
+                color: green;
+            }
+        }
+    }
+    .suggest{
+        text-align: center;
+        padding: 10rpx;
+    }
+
+
+    .mask{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        -webkit-box-align: center;
+        justify-content: center;
+        pointer-events: none;
+        .container.wrapper{
+            width: 120rpx;
+            height: 120rpx;
+            padding: 0;
+            background-color: rgba(0,0,0,0.5);
+            color: #fff;
+            // align-self: center;
+            line-height: 120rpx;
+        }
+    }
+}

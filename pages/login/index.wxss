@@ -1,0 +1,82 @@
+#indexPage swiper {
+  height: 200rpx;
+}
+#indexPage .classify {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+#indexPage .classify .item {
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#indexPage .classify .item image {
+  width: 50%;
+  height: 50%;
+}
+#indexPage .regiment .good {
+  display: flex;
+  height: 300rpx;
+}
+#indexPage .regiment .good .left {
+  width: 300rpx;
+  height: 100%;
+}
+#indexPage .regiment .good .left image {
+  width: 100%;
+  height: 100%;
+}
+#indexPage .regiment .good .right {
+  width: calc(-200%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#indexPage .regiment .good .right .top {
+  width: 100%;
+}
+#indexPage .regiment .good .right .top .title {
+  font-size: 38rpx;
+  line-height: 38rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 76rpx;
+}
+#indexPage .regiment .good .right .top .label text {
+  color: #eee;
+  font-size: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 10rpx 20rpx 0 0;
+}
+#indexPage .regiment .good .right .bottom {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#indexPage .regiment .good .right .bottom .art {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#indexPage .regiment .good .right .bottom .btn {
+  width: 40%;
+  background-color: gray;
+  border-radius: 8rpx;
+}

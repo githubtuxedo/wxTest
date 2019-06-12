@@ -1,0 +1,42 @@
+<!--pages/search/index.wxml-->
+<view id="searchPage">
+    <view class="top-search">
+        <input type="text" />
+    </view>
+    <view class="main">
+        <!-- <scroll-view class="main-left" scroll-y catchtap='chooseLeft'>
+            <block wx:for="{{leftList}}" wx:key="{{index}}">
+                <view data-index="{{index}}" class="left-item {{index==activeLeft?'active':''}}">{{item}}</view>
+            </block>
+        </scroll-view> -->
+        <scroll-view class="main-left" scroll-y catchtap='chooseLeft' scroll-into-view="{{letters.list[letters.chosenIdx]}}" scroll-with-animation>
+            <view wx:for="{{groups}}" wx:key="{{i}}" wx:for-item="itemList">
+                <view id="{{itemList.groupName}}" class="left-letter">{{itemList.groupName}}</view>
+                <view wx:for="{{itemList.users}}" wx:key="{{index}}" wx:for-item="item">
+                    {{item.name}}
+                </view>
+            </view>
+        </scroll-view>
+        <scroll-view class="main-right" scroll-y>
+            <view class="suggest" wx:for="{{leftList}}" wx:key="{{i}}" wx:for-item="item">
+                <view class="item">{{item}}</view>
+            </view>
+            <view>
+
+            </view>
+        </scroll-view>
+    </view>
+    <view class="letter-nav" bindtouchstart="bindtouchstart" bindtouchmove='touchmove' bindtouchcancel="bindtouchcancel" bindtouchend="bindtouchcancel">
+        <block wx:for="{{letters.list}}" wx:key="{{index}}">
+            <view data-index="{{index}}" catchtap="letterOnceClick" class="letter-item {{index==letters.chosenIdx?'active':''}}">{{item}}</view>
+        </block>
+    </view>
+
+
+    <!-- 自定义toast -->
+    <view class="mask" wx:if="{{showToast}}">
+        <view class="wrapper container">
+            {{letters.list[letters.chosenIdx]}}
+        </view>
+    </view>
+</view>

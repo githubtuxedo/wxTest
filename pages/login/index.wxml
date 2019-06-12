@@ -1,0 +1,57 @@
+<!--pages/login/index.wxml-->
+<view id="indexPage">
+    <view>
+        <input></input>
+    </view>
+    <view>
+        <!-- 轮播 -->
+        <swiper autoplay="true" interval="3000" circular="true">
+            <swiper-item>1</swiper-item>
+            <swiper-item>2</swiper-item>
+            <swiper-item>3</swiper-item>
+        </swiper>
+
+        <!-- 分类模块 -->
+        <view class="classify">
+            <block wx:for="{{array}}" wx:key="{{index}}">
+                <view class="item">
+                    <image src='{{item.url}}'></image>
+                    <text>{{item.text}}</text>
+                </view>
+            </block>
+        </view>
+        <!-- 开团 -->
+        <view class="regiment">
+            <block wx:for="{{regiment}}" wx:key="{{index}}">
+                <view class="good">
+                    <view class="left">
+                        <image src='{{item.url}}'></image>
+                    </view>
+                    <view class="right">
+                        <view class="top">
+                            <view class="title">{{item.title}}</view>
+                            <view class="label">
+                                <block wx:for="{{item.label}}" wx:for-item="v" wx:key="i">
+                                    <text>{{v}}</text>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="bottom">
+                            <view class="art">
+                                <view class="price">{{item.price}}</view>
+                                <view>已拼<text class="num">{{item.num}}</text>件</view>
+                            </view>
+                            <view class="btn">去参团</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{arrays}}">
+            <view class="picker">
+                当前选择：{{arrays[index]}}
+            </view>
+        </picker>
+    </view>
+</view>

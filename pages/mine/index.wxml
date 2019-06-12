@@ -1,0 +1,63 @@
+<!--pages/mine/index.wxml-->
+<view id="minePage">
+    <view class="personalInfo">
+        <view class="content">
+            <view class="head-left">
+                <image class="head-icon" src='../../images/tabbar/news.png'></image>
+                <view class="icon-right">
+                    <view class="username">用户名:<text>沈勇</text></view>
+                    <view wx:if='false'>
+                        <view class="mobile">手机号<text>17826622474</text></view>
+                    </view>
+                    <view wx:else>
+                        <image class="head-icon" src='../../images/tabbar/news.png'></image>
+                        <text>绑定手机号.领取礼包></text>
+                    </view>
+                </view>
+            </view>
+
+            <view class="head-right">
+                <view class="setting">
+                    账号管理
+                </view>
+                <view class='plus-card'>
+                    <view>plus会员</view>
+                    <view>升级10大特权></view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="my-order">
+        <view class="head-desc">
+            <view>我的订单</view>
+            <view class="check-all">查看全部></view>
+        </view>
+        <view class="items">
+            <view>
+                <image class="head-icon" src='../../images/tabbar/news.png'></image>
+                <text>待付款</text>
+            </view>
+            <view>
+                <image class="head-icon" src='../../images/tabbar/news.png'></image>
+                <text>待付款</text>
+            </view>
+            <view>
+                <image class="head-icon" src='../../images/tabbar/news.png'></image>
+                <text>待付款</text>
+            </view>
+            <view>
+                <image class="head-icon" src='../../images/tabbar/news.png'></image>
+                <text>待付款</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="advise-part">
+        <view class="line-head">
+            <view class="left-line"></view>
+            为您推荐
+            <view class="right-line"></view>
+        </view>
+    </view>
+</view>

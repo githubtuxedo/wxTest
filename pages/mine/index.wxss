@@ -1,0 +1,103 @@
+#minePage {
+  padding: 20rpx 30rpx;
+}
+#minePage .personalInfo .content {
+  overflow: hidden;
+  min-height: 200rpx;
+  background: rgba(216, 156, 156, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+#minePage .personalInfo .content .head-left {
+  align-self: center;
+  display: flex;
+  align-content: center;
+}
+#minePage .personalInfo .content .head-left .head-icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+#minePage .personalInfo .content .head-left .icon-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#minePage .personalInfo .content .head-left .icon-right .username {
+  font-size: 32rpx;
+}
+#minePage .personalInfo .content .head-left .icon-right .mobile {
+  font-size: 28rpx;
+  color: #ddd;
+}
+#minePage .personalInfo .content .head-right > view {
+  height: 50%;
+}
+#minePage .personalInfo .content .head-right .setting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+}
+#minePage .personalInfo .content .head-right .plus-card {
+  width: 200rpx;
+  border-radius: 8rpx;
+  background-color: pink;
+  font-size: 22rpx;
+  transform: rotate(10deg) translate3d(-6rpx, 16rpx, 2rpx);
+}
+#minePage .my-order {
+  margin-top: 30rpx;
+}
+#minePage .my-order .head-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#minePage .my-order .head-desc > view {
+  font-size: 32rpx;
+}
+#minePage .my-order .head-desc > view.check-all {
+  font-size: 26rpx;
+}
+#minePage .my-order .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+#minePage .my-order .items > view {
+  flex-grow: 1;
+  max-height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#minePage .my-order .items > view text {
+  font-size: 26rpx;
+}
+#minePage .my-order .items image {
+  width: 70rpx;
+  height: 70rpx;
+}
+#minePage .advise-part .line-head {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: gray;
+}
+#minePage .advise-part .line-head > view {
+  width: 200rpx;
+  height: 4rpx;
+  margin: 0 16rpx;
+}
+#minePage .advise-part .line-head .left-line {
+  background: radial-gradient(gray 24%, white 100%);
+}
+#minePage .advise-part .line-head .right-line {
+  background: radial-gradient(gray 24%, white 100%);
+}
